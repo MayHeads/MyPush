@@ -1,0 +1,6 @@
+framework module MyPush {
+  umbrella header "MyPush-umbrella.h"
+
+  export *
+  module * { export * }
+}

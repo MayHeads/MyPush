@@ -1,0 +1,22 @@
+{
+  "name": "MyPush",
+  "version": "0.1.0",
+  "summary": "A short description of MyPush.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mayheaders/MyPush",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mayheaders": "1811158143@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/mayheaders/MyPush.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "MyPush/Classes/**/*"
+}
