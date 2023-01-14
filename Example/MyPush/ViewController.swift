@@ -8,6 +8,7 @@
 
 import UIKit
 import MyPush
+import SnapKit
 class ViewController: UIViewController {
     
     let mycash: UILabel = {
@@ -16,17 +17,32 @@ class ViewController: UIViewController {
             label.numberOfLines = 0
             return label
         }()
+    
+    let button: UIButton = {
+        let btn = UIButton(type: .custom)
+        btn.setTitle("退出登录", for: .normal)
+        btn.setTitleColor(UIColor.red, for: .normal)
+        btn.backgroundColor = UIColor.orange
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        return btn
+    }()
+    
+    let vStack = VStack(spacing: 20)
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        print("Do any additional setup after loading the view, typically from a nib.")
+        view.addSubview(vStack)
+        vStack.backgroundColor = .systemOrange
+        vStack.snp.makeConstraints { make in
+            make.center.equalTo(view)
+        }
+        vStack.addArrangedSubviews([mycash, button]) {
+        }
         
-        view.addSubview(mycash)
-        mycash.frame = CGRectMake(20, 100, 80, 40)
-        mycash.s_textColor(.orange)
         
-        let view = BaseView()
+        
         
         
     }
